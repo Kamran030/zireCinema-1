@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+body {
+  font-family: "Quicksand", sans-serif !important;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px !important;
+  }
+}
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
+}
+/*! ---------------------------------------------------------------------- Start Header Navigation  */
+.navigationBar{
+  margin-bottom: 40px;
+}
+.nav-link{
+  color: #ffffff;
+  font-size: 18px;
+  outline: none !important;
+}
+.navlinks{
+  min-width: 900px!important;
+display: flex;
+justify-content: space-between;
+}
+.navlinks >* {
+  min-width: 70px;
+margin-right: 20px;
+
+}
+.homeHeaderContainer {
+  height: 100%;
+  background: /* top, transparent red, faked with gradient */ linear-gradient(
+      to right top,
+      #051937de,
+      #004d7af0,
+      #008793db,
+      #12c5bad1
+    ),
+    /* bottom, image */ url(./images/bg.jpg);
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.navHeaderContainer {
+  height: 293px;
+  background: /* top, transparent red, faked with gradient */ linear-gradient(
+      to right top,
+      #051937de,
+      #004d7af0,
+      #008793db,
+      #12c5bad1
+    ),
+    /* bottom, image */ url(./images/bg.jpg);
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.lang {
+  background: transparent;
+  border: none;
+  color: white;
+  width: 45px;
+}
+.lang > option {
+  background-color: #008793db;
+}
+.navlinks > a {
+  color: #ffffff;
+  font-size: 18px;
+  outline: none !important;
+}
+/*! ----------------------------------------------------------------------End Header Navigation  */
+
+/*! ----------------------------------------------------------------------Start Footer  */
+
+.footerContainer {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212025;
+  font-size: 20px;
+  color: #6a6a6a;
+  text-align: center;
+}
+.footerContainer a {
+  color: #6a6a6a;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.footerContainer span {
+  font-weight: 600;
+}
+.footer-end {
+  background-color: #181818;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-end > p {
+  color: #6a6a6a;
+  font-size: 18px;
+  text-align: center;
+}
+/*! ---------------------------------------------------------------------- Start Swiper Carousel  */
+.swiper {
+  height: 100%;
+}
+
+.carouselComponent {
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.carouselComponentLeftSide {
+  width: 58%;
+  min-height: 400px;
+  padding: 0 20px 0 0;
+}
+.carouselComponentLeftSide > iframe {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 20px;
+}
+.carouselComponentRightSide {
+  width: 42%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #28282d;
+  padding: 30px 30px 10px 30px;
+  color: #fff;
+}
+.carouselComponentRightSide a {
+  text-decoration: none;
+  color: #fff;
+}
+.carouselComponentRightSide h4 {
+  font-weight: 600;
+}
+.carouselComponentRightSide > :first-child > p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.carouselComponentMovieDetails {
+  display: flex;
+  flex-wrap: wrap;
+}
+.carouselComponentMovieDetails span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #7b7b7b;
+  line-height: 45px;
+}
+.carouselComponentMovieDetails p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+}
+.carouselComponentMovieDetails div {
+  display: inline-block;
+  padding: 0px 60px 0px 0px;
+}
+/*! ----------------------------------------------------------------------End Swiper Carousel  */
+
+/*! ----------------------------------------------------------------------Start AboutUs page  */
+
+.aboutUsContainer {
+  background-color: #181818;
+  padding: 30px 0 60px 0;
+}
+
+.aboutHeader {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  padding: 3rem 0;
+}
+.aboutHeader > h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 24px;
+}
+.aboutHeader > p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.aboutCarousel {
+  width: 870px;
+}
+.aboutCarousel img {
+  height: 500px;
+}
+
+.aboutMain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutMainLeft {
+  width: 60%;
+  height: 80%;
+  padding: 0 20px 0 0;
+}
+.aboutMainLeft img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.aboutMainRight {
+  width: 40%;
+  padding: 0 0 0 20px;
+}
+.aboutMainRight > img {
+  width: 100%;
+}
+/*! ----------------------------------------------------------------------End AboutUs page  */
+
+.homeLastSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+.homeLastSectionLeft {
+  width: 50%;
+  height: 80%;
+  padding: 0 20px 0 0;
+}
+.homeLastSectionLeft img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.homeLastSectionRight {
+  width: 50%;
+  padding: 0 0 0 20px;
+  margin-top: 1.5rem;
+}
+.homeLastSectionRight > h4 {
+  color: #6f6f6f;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.homeLastSectionRight > p {
+  font-size: 18px;
+  color: white;
+  line-height: 47px;
+  font-weight: 100;
+}
+.homeLastCarousel {
+  width: 720px;
+}
+.homeLastCarousel img {
+  height: 500px;
+  width: 100%;
+}
+.homeLastSectionBtn {
+  padding: 13px 50px;
+  border-radius: 31px;
+  color: #988cff;
+  background-color: #28282d;
+  border-color: #28282d;
+  box-shadow: 0px 20px 40px -15px rgba(0, 0, 0, 0.52);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+.homeLastSectionBtn:hover {
+  background-color: #988cff;
+  color: white;
+}
+
+/*! ----------------------------------------------------------------------Start MovieDetails page  */
+.selectedMovieContainer {
+  background-color: #181818;
+  height: 100%;
+}
+.selectedMovieMainContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+}
+.selectedMovieMainLeft {
+  width: 26%;
+  height: 80%;
+  padding: 0 15px;
+}
+.selectedMovieMainLeft > div {
+  position: absolute;
+  top: -70px;
+  left: 0;
+}
+
+.selectedMovieMainLeft div > img {
+  width: 360px;
+  height: 532px;
+  border-radius: 20px;
+}
+.selectedMovieMainRight {
+  width: 74%;
+  height: 80%;
+  padding: 0 15px;
+  padding-top: 50px;
+}
+
+.selectedMovieRightSideTabs .nav-link:hover {
+  color: #6a6a6a;
+  font-weight: 600;
+}
+.selectedMovieRightSideTabs .nav-link {
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.selectedMovieDescriptionTabMain {
+  display: flex;
+  flex-wrap: wrap;
+}
+.selectedMovieDescriptionTabMain div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 55px;
+  padding: 0px 60px 0px 0px;
+}
+
+.selectedMovieDescriptionTabMain div > span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #616161;
+}
+.selectedMovieDescriptionTabMain div > p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 45px;
+}
+
+.selectedMovieDescriptionTabMain > :nth-child(7) > p {
+  max-width: 350px;
+  word-wrap: break-word;
+}
+.selectedMovieRightSideTop > h1 {
+  font-weight: bold;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+.selectedMovieDescriptionTabBtn {
+  color: #988cff;
+  background-color: #28282d;
+  border-color: #28282d;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.6rem 3rem;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 30px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+.selectedMovieDescriptionTabBtn:hover {
+  background-color: #988cff;
+  color: white;
+}
+.selectedMovieTableTab table {
+  color: #fff !important;
+}
+th {
+  color: #616161;
+  font-weight: bold !important;
+}
+.selectedMovieMainBottom {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 50px 0;
+}
+.selectedMovieMainBottom > h1 {
+  font-weight: bold;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+.selectedMovieMainBottom > p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 45px;
+}
+
+/*! ----------------------------------------------------------------------Start JHome Session and Film table */
+.appContainer {
+  background-color: #181818;
+}
+#seans {
+  background-color: #212025;
+}
+.table-responsive_row {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+}
+
+#seans th {
+  color: #6a6a6a;
+  font-size: 18px;
+  padding: 20px;
+  text-align: left;
+}
+#seans table thead {
+  background-color: #29282e;
+  border-radius: 20px !important;
+}
+#seans table thead > tr {
+  background-color: #29282e;
+  border-radius: 20px !important;
+}
+#seans table thead > tr > :first-child {
+  background-color: #29282e;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+}
+#seans table thead > tr > :last-child {
+  background-color: #29282e;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+#seans td {
+  padding: 20px;
+  text-align: left;
+  border: none;
+}
+.table > :not(caption) > * > * {
+  border: none;
+}
+
+.table th,
+.table td {
+  padding: 27px 20px 27px 20px;
+  vertical-align: baseline;
+  /* border-top: 1px solid #dee2e6; */
+  min-width: 200px;
+}
+.table-responsive_price {
+  color: #988cff;
+}
+.HomePage-cinema-tabs {
+  border: none !important;
+}
+.HomePage-cinema-tabs .nav-link:hover {
+  color: #6a6a6a;
+  font-weight: 600;
+}
+
+.HomePage-cinema-tabs .nav-link {
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+/*! ----------------------------------------------------------------------Start Home Film Cards */
+
+.HomeMovieCardContainer {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.HomeMovieCard {
+  position: relative;
+  width: 340px;
+  height: 532px;
+  margin: 0 10px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+.HomeMovieCardImage {
+  width: 345px;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.HomeMovieCard:hover .HomeMovieCardImage {
+  position: relative;
+  cursor: pointer;
+  filter: blur(15px);
+  box-shadow: -1px -1px 30px 6px rgb(255, 253, 253, 0.5);
+  transition: 0.05s ease;
+  transition-timing-function: linear;
+}
+
+.HomeMovieCardInfo {
+  padding: 60px 0;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.HomeMovieCard:hover .HomeMovieCardInfo {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+  z-index: 10;
+}
+.HomeMovieCardInfo > ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.HomeMovieCardInfo > ul label {
+  margin-right: 40px;
+  color: #d8d8d8;
+  font-weight: 400;
+  font-size: 18px;
+  width: 55px;
+}
+.HomeMovieCardInfo > ul span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+.HomeMovieCard a {
+  color: white;
+  font-weight: 300;
+  margin-top: 20px;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.HomeMovieCard a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.selectedFilmsOtherFilms{
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 20px 10px;
+}
