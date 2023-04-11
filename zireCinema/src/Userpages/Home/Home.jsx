@@ -46,7 +46,6 @@ const Home = () => {
               speed={2000}
               pagination={{
                 clickable: true,
-                type: "fraction",
               }}
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
