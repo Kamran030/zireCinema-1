@@ -4,8 +4,8 @@ import { Tab, Tabs } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { RU, AZ } from "country-flag-icons/react/3x2";
-import Navigation from "../../components/Navigationbar";
-import YoutubeModal from "../../components/YoutubeModal";
+import Navigation from "../components/Navigationbar";
+import YoutubeModal from "../components/YoutubeModal";
 
 const SelectedMovie = () => {
   let { moviesId } = useParams();

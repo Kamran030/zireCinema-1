@@ -19,11 +19,13 @@ body {
     max-width: 1500px !important;
   }
 }
+
 .swiper-pagination-bullet {
   background-color: #fff !important;
   width: 10px !important;
   height: 10px !important;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff !important;
@@ -59,22 +61,40 @@ body {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+.seansIcons {
+  width: 40px;
+  border: 2px solid #4b4a4e;
+  border-radius: 6px;
+}
+.ellipsis > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+  white-space: break-spaces; /* let the text wrap preserving spaces */
+}
+.ellipsis {
+  overflow: hidden;
+}
 .navHeaderContainer {
   height: 293px;
-  background: /* top, transparent red, faked with gradient */ linear-gradient(
+  background: linear-gradient(
       to right top,
       #051937de,
       #004d7af0,
       #008793db,
       #12c5bad1
     ),
-    /* bottom, image */ url(./images/bg.jpg);
+    url(./images/bg.jpg);
   padding-bottom: 50px;
   padding-top: 50px;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
+}
+.navbar-toggler-icon {
+  padding-right: 5% !important;
 }
 .lang {
   background: transparent;
@@ -112,6 +132,9 @@ body {
 .footerContainer span {
   font-weight: 600;
 }
+.footerContainer h6 {
+  font-size: 18px;
+}
 .footer-end {
   background-color: #181818;
   padding-top: 20px;
@@ -122,6 +145,7 @@ body {
   font-size: 18px;
   text-align: center;
 }
+/*! ----------------------------------------------------------------------End Footer  */
 /*! ---------------------------------------------------------------------- Start Swiper Carousel  */
 .swiper {
   height: 450px !important;
@@ -139,13 +163,43 @@ body {
   padding: 0 20px 0 0;
 }
 .carouselComponentLeftSide > iframe {
+  position: relative;
   width: 100%;
   min-height: 100%;
   border-radius: 20px;
 }
+.carouselComponentYoutubeImage {
+  width: 836px;
+  height: 400px;
+  margin: 0 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 100;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+}
+.carouselComponentYoutubeImage svg {
+  width: 68px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  cursor: pointer;
+  color: red;
+}
+.showYoutube {
+  display: block;
+}
+.hideYoutube {
+  display: none;
+}
 .carouselComponentRightSide {
   width: 42%;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -439,7 +493,9 @@ th {
   font-weight: 500;
   border: none;
 }
-
+table{
+  width: 100%;
+}
 #seans th {
   color: #6a6a6a;
   font-size: 18px;
@@ -480,6 +536,9 @@ th {
   /* border-top: 1px solid #dee2e6; */
   min-width: 200px;
 }
+table tr > *{
+  inline-size: 225px; 
+}
 .table-responsive_price {
   color: #988cff;
 }
@@ -487,14 +546,18 @@ th {
   border: none !important;
 }
 .HomePage-cinema-tabs .nav-link:hover {
-  color: #6a6a6a;
+  color: #6a6a6a !important;
   font-weight: 600;
 }
 
 .HomePage-cinema-tabs .nav-link {
-  color: #ffff;
-  font-size: 18px;
-  font-weight: 600;
+  color: #ffff !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: black !important;
 }
 /*! ----------------------------------------------------------------------Start Home Film Cards */
 
@@ -525,11 +588,13 @@ th {
   overflow: hidden;
   background-size: cover;
 }
-
+tr > * {
+  color: white;
+}
 .HomeMovieCard:hover .HomeMovieCardImage {
   position: relative;
   cursor: pointer;
-  filter: blur(15px);
+  filter: blur(20px);
   box-shadow: -1px -1px 30px 6px rgb(255, 253, 253, 0.5);
   transition: 0.05s ease;
   transition-timing-function: linear;
@@ -556,7 +621,6 @@ th {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-
   z-index: 10;
 }
 .HomeMovieCardInfo > ul {
@@ -569,7 +633,7 @@ th {
   align-items: flex-start;
 }
 .HomeMovieCardInfo > ul label {
-  margin-right: 40px;
+  margin-right: 60px;
   color: #d8d8d8;
   font-weight: 400;
   font-size: 18px;
@@ -579,6 +643,7 @@ th {
   color: #fff;
   font-weight: 600;
   font-size: 18px;
+  margin-left: 30px;
 }
 .HomeMovieCard a {
   color: white;
@@ -589,10 +654,10 @@ th {
   text-decoration: none;
 }
 
-.HomeMovieCard a:hover {
+/* .HomeMovieCard a:hover {
   color: #fff;
   cursor: pointer;
-}
+} */
 
 .selectedFilmsOtherFilms {
   color: #fff;
@@ -605,4 +670,164 @@ th {
 .adminContainer {
   min-height: 100vh;
   background-color: #212529;
+}
+.signInContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #212529;
+}
+.adminPageHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/*? ---------------------------------------------------------------Responsive Design*/
+@media only screen and (max-width: 1450px) and (min-width: 1200px) {
+  .aboutMainLeft > div {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navlinks {
+    min-width: 100% !important;
+  }
+  .swiper {
+    height: 650px !important;
+  }
+  .container {
+    width: 100%;
+  }
+  .homeHeaderContainer > .container {
+    height: 850px !important;
+  }
+  .carouselComponent {
+    flex-direction: column;
+
+    min-height: 100px;
+    height: 100%;
+  }
+  .carouselComponentLeftSide {
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 10px;
+  }
+  .carouselComponentRightSide {
+    width: 100%;
+    max-height: 400px !important;
+    min-height: 300px !important;
+    height: 100%;
+    padding: 20px 20px 10px 30px;
+  }
+  .carouselComponentYoutubeImage {
+    height: 100px;
+  }
+  .homeHeaderSection {
+    height: 850px !important;
+  }
+  .HomeMovieCard,
+  .HomeMovieCardImage {
+    width: 300px;
+    max-width: 500px;
+  }
+
+  .HomeMovieCardContainer {
+    justify-content: space-between;
+  }
+  .homeLastSection {
+    flex-direction: column;
+  }
+  .homeLastSectionRight {
+    width: 100%;
+  }
+  .homeLastSectionLeft {
+    width: 100%;
+  }
+  .swiper {
+    width: 100% !important;
+  }
+  .aboutMain {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutMainLeft {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .aboutMainRight {
+    width: 80%;
+  }
+  .aboutMainLeft img {
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footerContainer a {
+    font-size: 16px;
+  }
+  .footerContainer span {
+    font-size: medium;
+  }
+  .footerContainer h6 {
+    font-size: 18px;
+  }
+  .footer-end > p {
+    font-size: 16px;
+  }
+  .HomeMovieCard {
+    width: 90%;
+  }
+  .HomeMovieCardImage {
+    width: 100%;
+    height: 100% !important;
+  }
+  .HomeMovieCardContainer {
+    justify-content: center;
+  }
+  .aboutMainLeft img {
+    width: 100%;
+    height: 60%;
+  }
+  .aboutMainLeft > div {
+    height: 20% !important;
+  }
+  .aboutHeader > h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 18px;
+  }
+  .aboutHeader > p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  /* #seans> table{
+    width: 20%;
+  }
+  #seans  th,td{
+    width: 20%!important;
+  } */
+}
+
+
+@media only screen and (max-width: 450px) {
+  #seans th {
+   
+    font-size: 14px;
+    padding:0;
+
+  }
+  #seans td {
+   
+    font-size: 14px;
+    padding:0;
+  
+  }
 }
